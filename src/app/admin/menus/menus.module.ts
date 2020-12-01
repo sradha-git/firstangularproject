@@ -4,8 +4,9 @@ import { RouterModule } from '@angular/router';
 import { MenusRoutingModule } from './menus-routing.module';
 import { MenusComponent } from './menus.component';
 import { SharedModule } from '../shared/shared.module';
+import { CreateMenuComponent } from './create-menu/create-menu.component';
 @NgModule({
-  declarations: [MenusComponent],
+  declarations: [MenusComponent,CreateMenuComponent],
   imports: [
     CommonModule,
     MenusRoutingModule,
