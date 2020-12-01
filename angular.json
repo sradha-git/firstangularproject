@@ -29,6 +29,7 @@
               "src/assets/plugins/node-waves/waves.css",
               "src/assets/plugins/animate-css/animate.css",
               "src/assets/css/style.css",
+              "src/assets/css/all.css",
               "src/assets/css/themes/all-themes.css"
             ],
             "scripts": [

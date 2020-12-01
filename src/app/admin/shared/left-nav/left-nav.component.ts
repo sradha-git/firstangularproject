@@ -8,34 +8,34 @@ import $ from "jquery";
 })
 export class LeftNavComponent implements OnInit {
 
-  constructor(private router: Router,private route: ActivatedRoute) { }
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
-     //Collapse or Expand Menu
-     $('.menu-toggle').on('click', function (e) {
+    //Collapse or Expand Menu
+    $('.menu-toggle').on('click', function (e) {
       var $this = $(this);
       var $content = $this.next();
 
       if ($($this.parents('ul')[0]).hasClass('list')) {
-          var $not = $(e.target).hasClass('menu-toggle') ? e.target : $(e.target).parents('.menu-toggle');
+        var $not = $(e.target).hasClass('menu-toggle') ? e.target : $(e.target).parents('.menu-toggle');
 
-          $.each($('.menu-toggle.toggled').not($not).next(), function (i, val) {
-              if ($(val).is(':visible')) {
-                  $(val).prev().toggleClass('toggled');
-                  $(val).slideUp();
-              }
-          });
+        $.each($('.menu-toggle.toggled').not($not).next(), function (i, val) {
+          if ($(val).is(':visible')) {
+            $(val).prev().toggleClass('toggled');
+            $(val).slideUp();
+          }
+        });
       }
 
       $this.toggleClass('toggled');
       $content.slideToggle(320);
-  });
+    });
   }
 
-  dashboard(){
+  dashboard() {
     this.router.navigate(['/admin/dashboard'])
   }
-  categories(){
+  categories() {
     this.router.navigate(['/admin/categories'])
   }
 
