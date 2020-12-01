@@ -45,10 +45,15 @@ export class HeaderComponent implements OnInit {
       }
     });
 
-    $(".sidebar .menu .list li").click(function () {
-      $("body").removeClass('overlay-open');
-      $('.overlay').fadeOut();
-    });
+
+    var width = $(window).width();
+    if(width < 1170){
+      $(".sidebar .menu .list li").click(function () {
+        $("body").removeClass('overlay-open');
+        $('.overlay').fadeOut();
+      });
+    }
+   
 
     
   }
