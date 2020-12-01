@@ -456,3 +456,17 @@ $(function () {
 
     setTimeout(function () { $('.page-loader-wrapper').fadeOut(); }, 50);
 });
+
+
+
+$(window).on('resize',checkStatuForResize);
+function checkStatuForResize() {
+    var body = $('body');
+    var width = $(window).width();
+    if(width < 1170){
+        body.addClass('ls-closed');
+    }
+    else {
+        body.removeClass('ls-closed');
+    }
+}

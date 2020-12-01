@@ -1,17 +1,17 @@
 ﻿.theme-red .navbar {
-  background-color: #F44336; }
+  background-color:#3f6ad8 }
 
 .theme-red .navbar-brand {
-  color: #fff; }
+  color: #fafbfc; }
   .theme-red .navbar-brand:hover {
-    color: #fff; }
+    color: #fafbfc; }
   .theme-red .navbar-brand:active {
-    color: #fff; }
+    color: #fafbfc; }
   .theme-red .navbar-brand:focus {
-    color: #fff; }
+    color: #fafbfc; }
 
 .theme-red .nav > li > a {
-  color: #fff; }
+  color:#fafbfc; }
   .theme-red .nav > li > a:hover {
     background-color: transparent; }
   .theme-red .nav > li > a:focus {
@@ -30,7 +30,7 @@
 .theme-red .sidebar .menu .list li.active {
   background-color: transparent; }
   .theme-red .sidebar .menu .list li.active > :first-child i, .theme-red .sidebar .menu .list li.active > :first-child span {
-    color: #F44336; }
+    color:#3f6ad8; }
 
 .theme-red .sidebar .menu .list .toggled {
   background-color: transparent; }
