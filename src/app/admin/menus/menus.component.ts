@@ -5,8 +5,6 @@ declare var jquery: any;
 declare var $: any;
 declare var DataTable: any;
 
-
-const Swal = require('sweetalert2')
 @Component({
   selector: 'app-menus',
   templateUrl: './menus.component.html',
@@ -16,7 +14,11 @@ export class MenusComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    $('#menuListTable').DataTable();
+    $('#menuListTable').DataTable(
+      {
+        responsive: true
+      }
+    );
     
     $('[data-toggle="tooltip"]').tooltip({
       container: 'body'
