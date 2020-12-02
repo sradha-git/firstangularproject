@@ -26,6 +26,7 @@
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
               "src/assets/plugins/bootstrap/css/bootstrap.css",
+              "src/assets/css/datatables.css",
               "src/assets/plugins/node-waves/waves.css",
               "src/assets/plugins/animate-css/animate.css",
               "src/assets/css/style.css",
@@ -33,12 +34,14 @@
               "src/assets/css/themes/all-themes.css"
             ],
             "scripts": [
-              "src/assets/plugins/jquery/jquery.min.js",
-              "src/assets/plugins/bootstrap/js/bootstrap.js",
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.js",
+              "node_modules/datatables.net/js/jquery.dataTables.js",
               "src/assets/plugins/bootstrap-select/js/bootstrap-select.js",
               "src/assets/plugins/jquery-slimscroll/jquery.slimscroll.js",
               "src/assets/plugins/node-waves/waves.js",
               "src/assets/js/admin.js",
+              "src/assets/js/pages/ui/tooltips-popovers.js",
               "src/assets/js/demo.js"
             ]
           },
