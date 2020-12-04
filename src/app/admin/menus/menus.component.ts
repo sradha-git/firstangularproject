@@ -16,7 +16,12 @@ export class MenusComponent implements OnInit {
   ngOnInit() {
     $('#menuListTable').DataTable(
       {
-        responsive: true
+        responsive: true,
+        "autoWidth": false,
+        dom: 'Bfrtip',
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ]
       }
     );
     
