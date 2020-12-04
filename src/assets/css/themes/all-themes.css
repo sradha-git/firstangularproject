@@ -1,5 +1,5 @@
 ﻿.theme-red .navbar {
-  background-color:#445ede }
+  background-color:#49b6d6 }
 
 .theme-red .navbar-brand {
   color: #fafbfc; }
@@ -39,9 +39,12 @@
   background-color: transparent; }
 
 .theme-red .sidebar .legal {
-  background-color: #fff; }
+  color: #b4bcc8;
+  background-color: #292929; 
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.05), 0 -1px 0 rgba(0, 0, 0, 0.05);
+}
   .theme-red .sidebar .legal .copyright a {
-    color: #F44336 !important; }
+    color:#506690 !important; }
 
 .theme-pink .navbar {
   background-color: #E91E63; }

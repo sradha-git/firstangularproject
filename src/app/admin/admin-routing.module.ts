@@ -17,6 +17,10 @@ const routes: Routes = [
   {
     path: 'menus',
     loadChildren: () => import('./menus/menus.module').then(m => m.MenusModule)
+  },
+  {
+    path: 'mailbox',
+    loadChildren: () => import('./mailbox/mailbox.module').then(m => m.MailboxModule)
   }
 ];
 
