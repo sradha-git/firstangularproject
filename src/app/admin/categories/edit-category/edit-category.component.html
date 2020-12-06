@@ -20,26 +20,41 @@
                         </h2>
                     </div>
                     <div class="body">
-                        <form #category="ngForm">
+                        <form #categoryForm="ngForm">
                             <div class="form-group">
                                 <label for="name">Category Name</label>
-                                <input type="text" placeholder="Category Name" [(ngModel)]="name" name="name" #Name="ngModel" class="form-control">
+                                <input type="text" placeholder="Category Name" [(ngModel)]="name" name="name" #Name="ngModel" class="form-control" [required]="true">
+                                <div *ngIf="Name.invalid && (Name.dirty || Name.touched)" style="color: red;">
+                                    <div *ngIf="Name.errors.required">Category Name is required</div>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="name">Parent Category</label>
-                                <input type="text" placeholder="Parent Category" [(ngModel)]="parent_category" name="parent" #Parent="ngModel" class="form-control">
+                                <input type="text" placeholder="Parent Category" [(ngModel)]="parent_category" name="parent" #Parent="ngModel" class="form-control" [required]="true">
+                                <div *ngIf="Parent.invalid && (Parent.dirty || Parent.touched)" style="color: red;">
+                                    <div *ngIf="Parent.errors.required">Parent Category is required</div>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="name">Category Description</label>
-                                <input type="text" placeholder="Category Name" [(ngModel)]="description" name="description" #Description="ngModel" class="form-control">
+                                <textarea placeholder="Category Description" [(ngModel)]="description" name="description" #Description="ngModel" class="form-control" cols="30" rows="4" [required]="true"></textarea>
+                                <div *ngIf="Description.invalid && (Description.dirty || Description.touched)" style="color: red;">
+                                    <div *ngIf="Description.errors.required">Description is required</div>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="name">Category Image</label>
-                                <input type="text" placeholder="Category Name" [(ngModel)]="image" name="image" #Image="ngModel" class="form-control">
+                                <input type="text" placeholder="Category Image" [(ngModel)]="image" name="image" #Image="ngModel" class="form-control" [required]="true">
+                                <div *ngIf="Image.invalid && (Image.dirty || Image.touched)" style="color: red;">
+                                    <div *ngIf="Image.errors.required">Image is required</div>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="name">Category Tags</label>
-                                <input type="text" placeholder="Category Name" [(ngModel)]="tags" name="tags" #Tags="ngModel" class="form-control">
+                                <input type="text" placeholder="Category Tags" [(ngModel)]="tags" name="tags" #Tags="ngModel" class="form-control" [required]="true">
+                                <div *ngIf="Tags.invalid && (Tags.dirty || Tags.touched)" style="color: red;">
+                                    <div *ngIf="Tags.errors.required"> Tags are required</div>
+                                </div>
                             </div>
                             <div class="row clearfix">
                                 <input type="checkbox" id="remember_me_3" [(ngModel)]="status" name="status" #Status="ngModel" class="filled-in">
@@ -47,7 +62,7 @@
                             </div>
                             <div class="row clearfix">
                                 <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-4 col-xs-offset-5">
-                                    <button type="button" class="btn btn-primary m-t-15 waves-effect">Save</button>
+                                    <button type="button" class="btn btn-primary m-t-15 waves-effect" [disabled]="!categoryForm.form.valid" (click)="save()">Save</button>
                                 </div>
                             </div>
                         </form>
