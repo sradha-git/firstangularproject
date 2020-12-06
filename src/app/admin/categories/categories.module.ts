@@ -6,13 +6,16 @@ import { CategoriesComponent } from './categories.component';
 import { SharedModule } from '../shared/shared.module';
 import { AddCategoryComponent } from './add-category/add-category.component';
 import { EditCategoryComponent } from './edit-category/edit-category.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [CategoriesComponent, AddCategoryComponent, EditCategoryComponent],
   imports: [
     CommonModule,
     CategoriesRoutingModule,
     RouterModule,
-    SharedModule
+    SharedModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class CategoriesModule { }
