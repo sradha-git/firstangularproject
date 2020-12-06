@@ -15,7 +15,20 @@ export class AddProductComponent implements OnInit {
 
   ngOnInit() {
 
-    var form = $('#wizard_with_validation').show();
+    var form = $('#wizard_horizontal').show();
+
+    $('#wizard_horizontal').steps({
+      headerTag: 'h2',
+      bodyTag: 'section',
+      transitionEffect: 'slideLeft',
+      onInit: function (event, currentIndex) {
+          setButtonWavesEffect(event);
+      },
+      onStepChanged: function (event, currentIndex, priorIndex) {
+          setButtonWavesEffect(event);
+      }
+  });
+
     form.steps({
       headerTag: 'h3',
       bodyTag: 'fieldset',
