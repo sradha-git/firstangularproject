@@ -56,14 +56,12 @@
                                     <div *ngIf="Tags.errors.required"> Tags are required</div>
                                 </div>
                             </div>
-                            <div class="row clearfix">
+                            <div class="form-group">
                                 <input type="checkbox" id="remember_me_3" [(ngModel)]="status" name="status" #Status="ngModel" class="filled-in">
                                 <label for="remember_me_3" style="margin-top: 6px;">Enable the menu</label>
                             </div>
-                            <div class="row clearfix">
-                                <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-4 col-xs-offset-5">
-                                    <button type="button" class="btn btn-primary m-t-15 waves-effect" [disabled]="!categoryForm.form.valid" (click)="save()">Save</button>
-                                </div>
+                            <div class="form-group">
+                                  <button type="button" class="btn btn-primary m-t-15 waves-effect" [disabled]="!categoryForm.form.valid" (click)="save()">Save</button>
                             </div>
                         </form>
                     </div>

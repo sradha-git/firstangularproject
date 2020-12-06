@@ -19,131 +19,106 @@
                             Add Product
                         </h2>
                     </div>
+
                     <div class="body">
-                        <div class="body">
-                            <form id="wizard_with_validation" method="POST">
-                                <h3>Product Information</h3>
-                                <fieldset>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <select class="form-control">
-                                                <option selected disabled> Choose Category </option>
-                                                <option value="10">10</option>
-                                                <option value="20">20</option>
-                                                <option value="30">30</option>
-                                                <option value="40">40</option>
-                                                <option value="50">50</option>
-                                            </select>
-                                            <!-- <label class="form-label">Choose Category*</label> -->
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <select class="form-control">
-                                                <option selected disabled> Choose Brand </option>
-                                                <option value="10">10</option>
-                                                <option value="20">20</option>
-                                                <option value="30">30</option>
-                                                <option value="40">40</option>
-                                                <option value="50">50</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <select class="form-control">
-                                                <option selected disabled> Choose Supplier </option>
-                                                <option value="10">10</option>
-                                                <option value="20">20</option>
-                                                <option value="30">30</option>
-                                                <option value="40">40</option>
-                                                <option value="50">50</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" name="name" id="name" required>
-                                            <label class="form-label">Product Name*</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <textarea name="description" class="form-control" cols="30" rows="5"
-                                                class="form-control no-resize" required></textarea>
-                                            <label class="form-label">Product Description*</label>
-                                        </div>
-                                    </div>
-                                </fieldset>
+                        <form id="wizard_with_validation" method="POST">
+                            <h3>Product Information</h3>
+                            <fieldset>
+                                <div class="form-group ">
+                                    <label for="name">Choose Category</label>
+                                    <select id="ccat" class="form-control" required>
+                                        <option selected disabled> Choose Category </option>
+                                        <option value="10">10</option>
+                                        <option value="20">20</option>
+                                        <option value="30">30</option>
+                                        <option value="40">40</option>
+                                        <option value="50">50</option>
+                                    </select>
+                                    <!-- <label class="form-label">Choose Category*</label> -->
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Category Brand</label>
+                                    <select id="cbrand" class="form-control" required>
+                                        <option selected disabled> Choose Brand </option>
+                                        <option value="10">10</option>
+                                        <option value="20">20</option>
+                                        <option value="30">30</option>
+                                        <option value="40">40</option>
+                                        <option value="50">50</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Category Supplier</label>
+                                    <select id="csup" class="form-control" required>
+                                        <option selected disabled> Choose Supplier </option>
+                                        <option value="10">10</option>
+                                        <option value="20">20</option>
+                                        <option value="30">30</option>
+                                        <option value="40">40</option>
+                                        <option value="50">50</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Product Name*</label>
+                                    <input type="text" class="form-control" placeholder="Product Name" name="name" id="pname" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Product Description*</label>
+                                    <textarea name="description" id="ckeditor" placeholder="Product Description" class="form-control" cols="30" rows="5"
+                                        class="form-control no-resize" required></textarea>                                        	
+                                </div>
+                            </fieldset>
 
-                                <h3>Profile Information</h3>
-                                <fieldset>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" name="highlights" class="form-control" required>
-                                            <label class="form-label">Highlights*</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" name="min_quantity" class="form-control" required>
-                                            <label class="form-label">Minimum Quantity*</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" name="max_quantity" class="form-control" required>
-                                            <label class="form-label">Maximum Quantity*</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" name="video_link" class="form-control" required>
-                                            <label class="form-label">Video Link</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" name="warranty" class="form-control" required>
-                                            <label class="form-label">Warranty</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" name="how_to_use" class="form-control" required>
-                                            <label class="form-label">How to Use</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" name="ingredients" class="form-control" required>
-                                            <label class="form-label">Ingredients</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <textarea name="dosage" cols="30" rows="2"
-                                                class="form-control no-resize"></textarea>
-                                            <label class="form-label">Dosage</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <textarea name="recomended_course" cols="30" rows="2"
-                                                class="form-control no-resize"></textarea>
-                                            <label class="form-label">Recomemded Course</label>
-                                        </div>
-                                    </div>
-                                </fieldset>
+                            <h3>Profile Information</h3>
+                            <fieldset>
+                                <div class="form-group">
+                                    <label class="form-label">Highlights*</label>
+                                    <input type="text" name="highlights" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Minimum Quantity*</label>
+                                    <input type="text" name="min_quantity" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Maximum Quantity*</label>
+                                    <input type="text" name="max_quantity" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Video Link</label>
+                                    <input type="text" name="video_link" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Warranty</label>
+                                    <input type="text" name="warranty" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">How to Use</label>
+                                    <input type="text" name="how_to_use" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Ingredients</label>
+                                    <input type="text" name="ingredients" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Dosage</label>
+                                    <textarea name="dosage" cols="30" rows="2"
+                                        class="form-control no-resize"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Recomemded Course</label>
+                                    <textarea name="recomended_course" cols="30" rows="2"
+                                        class="form-control no-resize"></textarea>
+                                </div>
+                            </fieldset>
 
-                                <h3>Terms & Conditions - Finish</h3>
-                                <fieldset>
-                                    <input id="acceptTerms-2" name="acceptTerms" type="checkbox" required>
-                                    <label for="acceptTerms-2">I agree with the Terms and Conditions.</label>
-                                </fieldset>
-                            </form>
-                        </div>
+                            <h3>Terms & Conditions - Finish</h3>
+                            <fieldset>
+                                <input id="acceptTerms-2" name="acceptTerms" type="checkbox" required>
+                                <label for="acceptTerms-2">I agree with the Terms and Conditions.</label>
+                            </fieldset>
+                        </form>
                     </div>
+
                 </div>
             </div>
         </div>
