@@ -7,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddCategoryComponent implements OnInit {
 
-  constructor() { }
+  name:any;
+  parent_category:any;
+  description:any;
+  image:any;
+  tags:any;
+  status:any;
+  
+  constructor() {
+   }
 
   ngOnInit() {
   }
