@@ -12,12 +12,29 @@ export class AddCategoryComponent implements OnInit {
   description:any;
   image:any;
   tags:any;
-  status:any;
-  
+  status:any = false;
+
+  data:any;
+
   constructor() {
-   }
+  }
 
   ngOnInit() {
+  }
+
+  save(){
+    this.data = {
+      name: this.name,
+      parent_category: this.parent_category,
+      description: this.description,
+      image: this.image,
+      tags: this.tags,
+      status: this.status
+    }
+
+
+
+    console.log(this.data)
   }
 
 }

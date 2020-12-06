@@ -20,7 +20,7 @@
                         </h2>
                     </div>
                     <div class="body">
-                        <form #category="ngForm">
+                        <form #categoryForm="ngForm">
                             <div class="form-group">
                                 <label for="name">Category Name</label>
                                 <input type="text" placeholder="Category Name" [(ngModel)]="name" name="name" #Name="ngModel" class="form-control" [required]="true">
@@ -62,7 +62,7 @@
                             </div>
                             <div class="row clearfix">
                                 <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-4 col-xs-offset-5">
-                                    <button type="button" class="btn btn-primary m-t-15 waves-effect">Save</button>
+                                    <button type="button" class="btn btn-primary m-t-15 waves-effect" [disabled]="!categoryForm.form.valid" (click)="save()">Save</button>
                                 </div>
                             </div>
                         </form>
