@@ -25,26 +25,95 @@
                         <div id="wizard_horizontal">
                             <h2>First Step</h2>
                             <section>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas
-                                    arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea
-                                    dictumst. Donec a semper dui. Nunc eget quam libero. Nam at felis metus. Nam tellus
-                                    dolor, tristique ac tempus nec, iaculis quis nisi.
-                                </p>
+                                <fieldset>
+                                    <div class="form-group ">
+                                        <label for="name">Choose Category</label>
+                                        <select id="ccat" class="form-control" required>
+                                            <option selected disabled> Choose Category </option>
+                                            <option value="10">10</option>
+                                            <option value="20">20</option>
+                                            <option value="30">30</option>
+                                            <option value="40">40</option>
+                                            <option value="50">50</option>
+                                        </select>
+                                        <!-- <label class="form-label">Choose Category*</label> -->
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="name">Category Brand</label>
+                                        <select id="cbrand" class="form-control" required>
+                                            <option selected disabled> Choose Brand </option>
+                                            <option value="10">10</option>
+                                            <option value="20">20</option>
+                                            <option value="30">30</option>
+                                            <option value="40">40</option>
+                                            <option value="50">50</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="name">Category Supplier</label>
+                                        <select id="csup" class="form-control" required>
+                                            <option selected disabled> Choose Supplier </option>
+                                            <option value="10">10</option>
+                                            <option value="20">20</option>
+                                            <option value="30">30</option>
+                                            <option value="40">40</option>
+                                            <option value="50">50</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Product Name*</label>
+                                        <input type="text" class="form-control" placeholder="Product Name" name="name" id="pname" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Product Description*</label>
+                                        <textarea name="description" id="ckeditor" placeholder="Product Description" class="form-control" cols="30" rows="5"
+                                            class="form-control no-resize" required></textarea>                                        	
+                                    </div>
+                                </fieldset>
                             </section>
 
                             <h2>Second Step</h2>
                             <section>
-                                <p>
-                                    Donec mi sapien, hendrerit nec egestas a, rutrum vitae dolor. Nullam venenatis diam ac
-                                    ligula elementum pellentesque. In lobortis sollicitudin felis non eleifend. Morbi
-                                    tristique tellus est, sed tempor elit. Morbi varius, nulla quis condimentum dictum,
-                                    nisi elit condimentum magna, nec venenatis urna quam in nisi. Integer hendrerit sapien
-                                    a diam adipiscing consectetur. In euismod augue ullamcorper leo dignissim quis elementum
-                                    arcu porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo
-                                    velit, blandit ac tempor nec, ultrices id diam. Donec metus lacus, rhoncus sagittis
-                                    iaculis nec, malesuada a diam. Donec non pulvinar urna. Aliquam id velit lacus.
-                                </p>
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label class="form-label">Highlights*</label>
+                                        <input type="text" name="highlights" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Minimum Quantity*</label>
+                                        <input type="text" name="min_quantity" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Maximum Quantity*</label>
+                                        <input type="text" name="max_quantity" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Video Link</label>
+                                        <input type="text" name="video_link" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Warranty</label>
+                                        <input type="text" name="warranty" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">How to Use</label>
+                                        <input type="text" name="how_to_use" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Ingredients</label>
+                                        <input type="text" name="ingredients" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Dosage</label>
+                                        <textarea name="dosage" cols="30" rows="2"
+                                            class="form-control no-resize"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Recomemded Course</label>
+                                        <textarea name="recomended_course" cols="30" rows="2"
+                                            class="form-control no-resize"></textarea>
+                                    </div>
+                                </fieldset>
                             </section>
 
                             <h2>Third Step</h2>
