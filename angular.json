@@ -48,9 +48,9 @@
               "src/assets/plugins/jquery-slimscroll/jquery.slimscroll.js",
               "src/assets/plugins/node-waves/waves.js",
               "src/assets/js/admin.js",
-              "src/assets/js/pages/ui/tooltips-popovers.js",
-              "src/assets/js/demo.js",
-              "src/assets/js/pages/forms/form-wizard.js"
+              "src/assets/js/pages/ui/tooltips-popovers.js",              
+              "src/assets/js/pages/forms/form-wizard.js",
+              "src/assets/js/demo.js"
             ]
           },
           "configurations": {
