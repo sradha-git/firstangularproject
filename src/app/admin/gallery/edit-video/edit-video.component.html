@@ -1,0 +1,109 @@
+<app-header></app-header>
+<app-left-nav></app-left-nav>
+<section class="content">
+    <div class="container-fluid">
+        <div class="block-header">
+            <h2>
+                <button [routerLink]="['/admin/products']" type="button"
+                    class="btn btn-default btn-circle waves-effect waves-circle waves-float">
+                    <i class="material-icons">keyboard_arrow_left</i>
+                </button> &nbsp;&nbsp;&nbsp;Edit Video.</h2>
+        </div>
+
+        <!-- Horizontal Layout -->
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>
+                            Update Video Details
+                        </h2>
+                        
+                    </div>
+
+                    <div class="body">
+                        <div id="wizard_horizontal">
+                        
+                            <section>
+                                <fieldset>
+                                    
+                                    <form action="#">
+                                    <div class="form-group ">
+                                        <div class="rows"><br>
+                                        <div class="col-md-6">
+                                            <label  for="name">Gym Id</label>
+                                            <input type="text" class="form-control" id="gymid" placeholder="Enter Gym Id" name="gymid">
+                                        </div>
+                                         <div class="col-md-6">
+                                            <label  for="name"> Video Id</label>
+                                            <input type="text" class="form-control" id="videoid" placeholder="Enter Video Id" name="videoid">
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <div class="rows">
+                                        <div class="col-md-6">
+                                            <label  for="name">Video Link</label>
+                                            <input type="text " class="form-control" id="videolink" Placeholder="Enter Video Link" name="videolink">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label  for="name">Status</label>
+                                            <select id="astatus" class="form-control" name="astatus" required>
+                                                <option selected disabled> Active Status </option>
+                                                <option value="10">10</option>
+                                                <option value="20">20</option>
+                                                <option value="30">30</option>
+                                                <option value="40">40</option>
+                                                <option value="50">50</option>
+                                            </select>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <div class="rows"><br>
+                                            <div class="col-md-6">
+                                                <label  for="name">Description</label>
+                                                <textarea name="details" id="description" placeholder="Enter description" class="form-control" cols="30" rows="5"
+                                                        class="form-control no-resize" required></textarea>
+                                             </div>
+                                             <div class="col-md-6">
+                                                <label  for="name">Purpose Of Video</label>
+                                                <textarea name="pvideo" id="pvideo" placeholder="Purpose of Video" class="form-control" cols="30" rows="5"
+                                                            class="form-control no-resize" required></textarea>
+                                             </div>
+                                         
+                                         
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group ">
+                                        <div class="rows"><br>
+                                        
+                                        
+                                         
+                                         <div class="col-md-12">
+                                            <input type="submit" class="btn btn-primary btn-lg" id="" name="submit" value="submit">
+                                           
+                                            <input type="reset" class="btn btn-secondary btn-lg" id="" name="reset" value="Reset">
+                                           </div>
+                                        </div>
+                                    </div>
+                                    
+                                   </form>
+                                </fieldset>
+                            </section>
+
+                            
+
+                            
+
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- #END# Horizontal Layout -->
+    </div>
+</section>

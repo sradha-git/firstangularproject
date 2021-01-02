@@ -1,0 +1,207 @@
+<app-header></app-header>
+<app-left-nav></app-left-nav>
+<section class="content">
+    <div class="container-fluid">
+        <div class="block-header">
+            <h2>
+                <button [routerLink]="['/admin/gym/manage-staff']" type="button"
+                    class="btn btn-default btn-circle waves-effect waves-circle waves-float">
+                    <i class="material-icons">keyboard_arrow_left</i>
+                </button> &nbsp;&nbsp;&nbsp;Manage Staff Details.
+            </h2>
+        </div>
+
+        <!-- Horizontal Layout -->
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>
+                            Add Staff Details Details
+                        </h2>
+
+                    </div>
+
+                    <div class="body">
+                        <div id="wizard_horizontal">
+
+                            <section>
+
+                                <fieldset>
+                                    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+                                        <div class="form-group ">
+                                            <div class="rows"><br>
+                                                <div class="col-md-6">
+                                                    <label for="name">Gym Id</label>
+                                                    <input type="text" class="form-control" formControlName="gymid"
+                                                        id="gymid" placeholder="Enter Gym Id" name="GymId"
+                                                        #GymId="ngModel"
+                                                        [(ngModel)]="service.formData.GymId" required>
+                                                    <p class="validation-error"
+                                                        *ngIf="GymId.invalid && GymId.touched">This field is required.
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="name">Staff Id</label>
+                                                    <input type="text" class="form-control" formControlName="staffid"
+                                                        id="staffid" placeholder="Enter Staff Id" name="StaffId"
+                                                        #StaffId="ngModel"
+                                                        [(ngModel)]="service.formData.StaffId" required>
+                                                    <p class="validation-error"
+                                                        *ngIf="StaffId.invalid && StaffId.touched">This field is required.
+                                                   </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group ">
+                                            <div class="rows">
+                                                <div class="col-md-6">
+                                                    <label for="name">Name</label>
+                                                    <input type="text" class="form-control" formControlName="name"
+                                                        id="name" placeholder="Enter Staff Name" name="Name"
+                                                        #Name="ngModel"
+                                                        [(ngModel)]="service.formData.Name" required>
+                                                    <p class="validation-error"
+                                                        *ngIf="Name.invalid && Name.touched">This field is required.
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="name">Category</label>
+                                                    <select id="category" class="form-control"
+                                                        formControlName="category" name="Category"
+                                                        #Category="ngModel"
+                                                        [(ngModel)]="service.formData.ContactedDate" required>
+                                                        <option selected disabled> Categories </option>
+                                                        <option value="Category 1">Category 1</option>
+                                                        <option value="Category 2">Category 2</option>
+                                                        <option value="Category 3">Category 3</option>
+                                                        <option value="Category 4">Category 4</option>
+                                                        <option value="Category 5">Category 5</option>
+                                                    </select>
+                                                    
+                                                    <p class="validation-error"
+                                                        *ngIf="Category.invalid && Category.touched">This field is required.
+                                                     </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group ">
+                                            <div class="rows"><br>
+
+                                                <div class="col-md-6">
+                                                    <label for="name"> Gender</label>
+                                                    <select id="category" class="form-control" formControlName="gender"
+                                                        name="Gender" #Gender="ngModel"
+                                                        [(ngModel)]="service.formData.Gender" required>
+                                                        <option selected disabled> select Gender</option>
+                                                        <option value="male">Male</option>
+                                                        <option value="female">Female</option>
+
+                                                    </select>
+                                                    
+                                                    <p class="validation-error"
+                                                        *ngIf="Gender.invalid && Gender.touched">This field is required.
+                                                     </p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="name">Address Prof</label>
+                                                    <input type="file" id="address" class="form-control"
+                                                        formControlName="address" placeholder="Upload Address prof Copy"
+                                                        name="Address" #Address="ngModel"
+                                                        [(ngModel)]="service.formData.Address" required>
+                                                    <p class="validation-error"
+                                                        *ngIf="Address.invalid && Address.touched">This field is required.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group ">
+                                            <div class="rows"><br>
+                                                <div class="col-md-4">
+                                                    <label for="name"> Contact </label>
+                                                    <input type="text" class="form-control" formControlName="contact"
+                                                        id="contact" placeholder="Enter Contact Number" name="Contact"
+                                                        #Contact="ngModel"
+                                                        [(ngModel)]="service.formData.Contact" required>
+                                                    <p class="validation-error"
+                                                        *ngIf="Contact.invalid && Contact.touched">This field is required.
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="name"> Email </label>
+                                                    <input type="email" class="form-control" formControlName="email"
+                                                        id="email" placeholder="Enter Email" name="Email"
+                                                        #Email="ngModel"
+                                                        [(ngModel)]="service.formData.Email" required>
+                                                    <p class="validation-error"
+                                                        *ngIf="Email.invalid && Email.touched">This field is required.
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="name">Salary</label>
+                                                    <input type="text" class="form-control" formControlName="salary"
+                                                        id="salary" placeholder="Enter Salary" name="Salary"
+                                                        #Salary="ngModel"
+                                                        [(ngModel)]="service.formData.Salary" required>
+                                                    <p class="validation-error"
+                                                        *ngIf="Salary.invalid && Salary.touched">This field is required.
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="form-group ">
+                                            <div class="rows"><br>
+
+
+                                                <div class="col-md-6">
+                                                    <label for="name">Photo</label>
+                                                    <input type="file" id="photo" formControlName="photo"
+                                                        placeholder="Upload Photo" name="Photo" #Photo="ngModel"
+                                                        [(ngModel)]="service.formData.Photo" required>
+                                                    <p class="validation-error"
+                                                        *ngIf="Photo.invalid && Photo.touched">This field is required.
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="name">Status</label>
+                                                    <select id="astatus" class="form-control" formControlName="astatus"
+                                                        name="ActiveStatus" #ContactedDate="ngModel"
+                                                        [(ngModel)]="service.formData.ActiveStatus" required>
+                                                        <option selected disabled> Active Status </option>
+                                                        <option value="Active">Active</option>
+                                                        <option value="Inactive">Inactive</option>
+
+                                                    </select>
+                                                    
+                                                    <p class="validation-error"
+                                                        *ngIf="ActiveStatus.invalid && ActiveStatus.touched">This field is required.
+                                                     </p>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <button type="submit"
+                                                    [disabled]="form.invalid">Submit</button>
+
+                                                    <input type="reset" class="btn btn-secondary btn-lg" id=""
+                                                        name="reset" value="Reset">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </fieldset>
+                            </section>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- #END# Horizontal Layout -->
+    </div>
+</section>

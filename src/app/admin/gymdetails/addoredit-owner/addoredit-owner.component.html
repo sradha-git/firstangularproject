@@ -1,0 +1,168 @@
+<app-header></app-header>
+<app-left-nav></app-left-nav>
+<section class="content">
+    <div class="container-fluid">
+        <div class="block-header">
+            <h2>
+                <button [routerLink]="['/admin/gym/manage-owner']" type="button"
+                    class="btn btn-default btn-circle waves-effect waves-circle waves-float">
+                    <i class="material-icons">keyboard_arrow_left</i>
+                </button> &nbsp;&nbsp;&nbsp;Manage Owner
+            </h2>
+        </div>
+
+        <!-- Horizontal Layout -->
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>
+                            Add Owner Details
+                        </h2>
+
+                    </div>
+
+                    <div class="body">
+                        <div id="wizard_horizontal">
+
+                            <section>
+                                <fieldset>
+
+                                    <form #form="ngForm" autocomplete="off">
+                                        <div class="form-group ">
+                                            <div class="rows"><br>
+                                                <div class="col-md-6">
+                                                    <label for="name">Gym Id</label>
+                                                    <input type="text" class="form-control" id="gymid"
+                                                        placeholder="Enter Gym Id" name="GymId" #GymId="ngModel"
+                                                        [(ngModel)]="service.formData.GymId" required>
+                                                    <p class="validation-error" *ngIf="GymId.invalid && GymId.touched">
+                                                        This field is
+                                                        required.
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="name">Owner Id</label>
+                                                    <input type="text" class="form-control" id="ownerid"
+                                                        placeholder="Enter Owner Id" name="OwnerId" #OwnerId="ngModel"
+                                                        [(ngModel)]="service.formData.OwnerId" required>
+                                                    <p class="validation-error"
+                                                        *ngIf="OwnerId.invalid && OwnerId.touched">This field is
+                                                        required.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group ">
+                                            <div class="rows">
+                                                <div class="col-md-6">
+                                                    <label for="name">Owner Name</label>
+                                                    <input type="text" class="form-control" id="ownername"
+                                                        placeholder="Enter Owner Name" name="OwnerName"
+                                                        #OwnerName="ngModel" [(ngModel)]="service.formData.OwnerName"
+                                                        required>
+                                                    <p class="validation-error"
+                                                        *ngIf="OwnerName.invalid && OwnerName.touched">This field is
+                                                        required.
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="name">Date of Birth</label>
+                                                    <input type="date" class="form-control" id="odob"
+                                                        placeholder="Enter Owner's DOB" name="Dob" #Dob="ngModel"
+                                                        [(ngModel)]="service.formData.Dob" required>
+                                                    <p class="validation-error" *ngIf="Dob.invalid && Dob.touched">
+                                                        This field is required.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group ">
+                                            <div class="rows"><br>
+                                                <div class="col-md-12">
+                                                    <label class="form-label">Details</label>
+                                                    <textarea name="Details" id="ckeditor"
+                                                        placeholder="Enter details here.... " class="form-control"
+                                                        cols="30" rows="5" class="form-control no-resize"
+                                                        #Details="ngModel" [(ngModel)]="service.formData.Details"
+                                                        required>
+                                                       <p class="validation-error"
+                                                        *ngIf="Details.invalid && Details.touched">This field is required.
+                                                       </p>
+
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="name">Email</label>
+                                                    <input type="email" class="form-control" id="email"
+                                                        placeholder="Enter Email" name="Email" #Email="ngModel"
+                                                        [(ngModel)]="service.formData.Email" required>
+                                                    <p class="validation-error"
+                                                        *ngIf="Email.invalid && Email.touched">This field is required.
+                                                     </p>
+                                                </div>
+                                                <div class="col-md-6">
+
+                                                    <label for="name">Phone</label>
+                                                    <input type="text" class="form-control" id="phone"
+                                                        placeholder="Enter Phone No" name="Phone" #Phone="ngModel"
+                                                        [(ngModel)]="service.formData.Phone" required>
+                                                    <p class="validation-error"
+                                                        *ngIf="Phone.invalid && Phone.touched">This field is required.
+                                                     </p>
+                                                </div>
+                                            </div>
+                                        
+
+                                            </div>
+                                        <div class="form-group ">
+                                            <div class="rows"><br>
+                                                <div class="col-md-6">
+                                                    <label for="name"> Contacted Date </label>
+                                                    <input type="date" class="form-control" id="cdate"
+                                                        placeholder="Enter Contacted Date" name="ContactedDate" #ContactedDate="ngModel"
+                                                        [(ngModel)]="service.formData.ContactedDate" required>
+                                                    <p class="validation-error"
+                                                        *ngIf="ContactedDate.invalid && ContactedDate.touched">This field is required.
+                                                </p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="name">Status</label>
+                                                    <select id="astatus" class="form-control" name="ActiveStatus"
+                                                    #ActiveStatus="ngModel" [(ngModel)]="service.formData.ActiveStatus" required>
+                                                        <option selected disabled> Active Status </option>
+                                                        <option value="active">Active</option>
+                                                        <option value="inactive">Inactive</option>
+
+                                                    </select>
+                                                    
+                                                    <p class="validation-error"
+                                                        *ngIf="ActiveStatus.invalid && ActiveStatus.touched">This field is required.
+                                                </p>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <button type="submit" [disabled]="form.invalid">Submit</button>
+
+                                                    <input type="reset" class="btn btn-secondary btn-lg" id=""
+                                                        name="reset" value="Reset">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </fieldset>
+                            </section>
+
+
+
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- #END# Horizontal Layout -->
+    </div>
+</section>

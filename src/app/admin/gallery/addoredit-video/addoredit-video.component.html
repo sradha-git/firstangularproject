@@ -1,0 +1,145 @@
+<app-header></app-header>
+<app-left-nav></app-left-nav>
+<section class="content">
+    <div class="container-fluid">
+        <div class="block-header">
+            <h2>
+                <button [routerLink]="['/admin/gallery/manage-video']" type="button"
+                    class="btn btn-default btn-circle waves-effect waves-circle waves-float">
+                    <i class="material-icons">keyboard_arrow_left</i>
+                </button> &nbsp;&nbsp;&nbsp;Manage Video.
+            </h2>
+        </div>
+
+        <!-- Horizontal Layout -->
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>
+                            Add Video Details
+                        </h2>
+
+                    </div>
+
+                    <div class="body">
+                        <div id="wizard_horizontal">
+
+                            <section>
+                                <fieldset>
+
+                                    <form #form="ngForm" autocomplete="off">
+                                        <div class="form-group ">
+                                            <div class="rows"><br>
+                                                <div class="col-md-6">
+                                                    <label for="name">Gym Id</label>
+                                                    <input type="text" class="form-control" id="gymid"
+                                                        placeholder="Enter Gym Id" name="GymId" #GymId="ngModel"
+                                                        [(ngModel)]="service.formData.GymId" required>
+                                                    <div class="validation-error"
+                                                        *ngIf="GymId.invalid && GymId.touched">This field is required.
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="name"> Video Id</label>
+                                                    <input type="text" class="form-control" id="videoid"
+                                                        placeholder="Enter Video Id" name="VideoId" #VideoId="ngModel"
+                                                        [(ngModel)]="service.formData.VideoId" required>
+                                                    <div class="validation-error"
+                                                        *ngIf="VideoId.invalid && VideoId.touched">This field is
+                                                        required.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group ">
+                                            <div class="rows">
+                                                <div class="col-md-6">
+                                                    <label for="name">Video Link</label>
+                                                    <input type="text " class="form-control" id="videolink"
+                                                        Placeholder="Enter Video Link" name="VideoLink"
+                                                        #VideoLink="ngModel" [(ngModel)]="service.formData.VideoLink"
+                                                        required>
+                                                    <div class="validation-error"
+                                                        *ngIf="VideoLink.invalid && VideoLink.touched">This field is
+                                                        required.
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="name">Status</label>
+                                                    <select id="astatus" class="form-control" name="ActiveStatus"
+                                                        #ActiveStatus="ngModel" [(ngModel)]="service.formData.ActiveStatus"
+                                                        required>
+                                                        <option selected disabled> Active Status </option>
+                                                        <option value="active">Active</option>
+                                                        <option value="inactive">Inactive</option>
+
+                                                    </select>
+
+                                                    <div class="validation-error"
+                                                        *ngIf="ActiveStatus.invalid && ActiveStatus.touched">This field
+                                                        is required.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group ">
+                                            <div class="rows"><br>
+                                                <div class="col-md-6">
+                                                    <label for="name">Description</label>
+                                                    <textarea name="Description" id="description"
+                                                        placeholder="Enter description" class="form-control" cols="30"
+                                                        rows="5" class="form-control no-resize" #Description="ngModel"
+                                                        [(ngModel)]="service.formData.Description" required>
+                                                    <div class="validation-error"
+                                                        *ngIf="Description.invalid && Description.touched">This field is required.
+                                                    </div>
+                                             </div>
+                                             <div class="col-md-6">
+                                                <label  for="name">Purpose Of Video</label>
+                                                <textarea name="Purpose" id="pvideo" placeholder="Purpose of Video" class="form-control" cols="30" rows="5"
+                                                            class="form-control no-resize" #Purpose="ngModel"
+                                                            [(ngModel)]="service.formData.Purpose" required></textarea>
+                                                    <div class="validation-error"
+                                                        *ngIf="Purpose.invalid && Purpose.touched">This field is
+                                                        required.
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group ">
+                                            <div class="rows"><br>
+
+
+
+                                                <div class="col-md-12">
+                                                    <input type="submit" class="btn btn-primary btn-lg" id=""
+                                                        [disabled]="form.invalid" name="submit" value="submit">
+
+                                                    <input type="reset" class="btn btn-secondary btn-lg" id=""
+                                                        name="reset" value="Reset">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </fieldset>
+                            </section>
+
+
+
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- #END# Horizontal Layout -->
+    </div>
+</section>

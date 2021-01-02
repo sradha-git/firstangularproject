@@ -25,17 +25,27 @@
             <li>
                 <a href="javascript:void(0);" class="menu-toggle">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-package"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-                    <span>Products</span>
+                    <span>Gym Details</span>
                 </a>
                 <ul class="ml-menu">
-                    <li [routerLink]="['/admin/products']" [routerLinkActive]="['active']">
+                    <li [routerLink]="['/admin/gym/manage-gym-details']" [routerLinkActive]="['active']">
                         <a href="javascript:void(0);">
-                            <span>Product Lists</span>
+                            <span>Manage GymDetails</span>
                         </a>
                     </li>
-                    <li [routerLink]="['/admin/products/add']" [routerLinkActive]="['active']">
+                    <li [routerLink]="['/admin/gym/manage-initial-investment']" [routerLinkActive]="['active']">
                         <a href="javascript:void(0);">
-                            <span>Add Product</span>
+                            <span>Manage Initial Investment</span>
+                        </a>
+                    </li>
+                    <li [routerLink]="['/admin/gym/manage-owner']" [routerLinkActive]="['active']">
+                        <a href="javascript:void(0);">
+                            <span>Manage Owner</span>
+                        </a>
+                    </li>
+                    <li [routerLink]="['/admin/gym/manage-staff']" [routerLinkActive]="['active']">
+                        <a href="javascript:void(0);">
+                            <span>Manage Staff</span>
                         </a>
                     </li>
                    
@@ -89,17 +99,123 @@
             <li>
                 <a href="javascript:void(0);" class="menu-toggle">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                    <span>Users</span>
+                    <span>Package Details</span>
                 </a>
                 <ul class="ml-menu">
-                    <li>
+                    <li [routerLink]="['/admin/packagedetails/manage-package-details']" [routerLinkActive]="['active']">
                         <a href="javascript:void(0);">
-                            <span>User Lists</span>
+                            <span>Manage Package Details</span>
                         </a>
                     </li>
-                    <li>
+                    
+                   
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-package"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                    <span>Nutrition</span>
+                </a>
+                <ul class="ml-menu">
+                    <li [routerLink]="['/admin/nutrition/manage-nutrition-category']" [routerLinkActive]="['active']">
                         <a href="javascript:void(0);">
-                            <span>Create User</span>
+                            <span>Manage Nutrition Category</span>
+                        </a>
+                    </li>
+                    <li [routerLink]="['/admin/nutrition/manage-nutrition-details']" [routerLinkActive]="['active']">
+                        <a href="javascript:void(0);">
+                            <span>Manage Nutrition Details</span>
+                        </a>
+                    </li>
+                    <li [routerLink]="['/admin/nutrition/manage-vendor']" [routerLinkActive]="['active']">
+                        <a href="javascript:void(0);">
+                            <span>Manage Vendor</span>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-package"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                    <span>Gallery</span>
+                </a>
+                <ul class="ml-menu">
+                    <li [routerLink]="['/admin/gallery/manage-activity']" [routerLinkActive]="['active']">
+                        <a href="javascript:void(0);">
+                            <span>Manage Activity</span>
+                        </a>
+                    </li>
+                    <li [routerLink]="['/admin/gallery/manage-instrument-gallery']" [routerLinkActive]="['active']">
+                        <a href="javascript:void(0);">
+                            <span>Manage Instrument Gallery</span>
+                        </a>
+                    </li>
+                    <li [routerLink]="['/admin/gallery/manage-videos']" [routerLinkActive]="['active']">
+                        <a href="javascript:void(0);">
+                            <span>Manage Videos</span>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-package"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                    <span>Fitness</span>
+                </a>
+                <ul class="ml-menu">
+                    <li [routerLink]="['/admin/fitness/manage-fitness-category']" [routerLinkActive]="['active']">
+                        <a href="javascript:void(0);">
+                            <span>Manage Fitness Category</span>
+                        </a>
+                    </li>
+                    <li [routerLink]="['/admin/fitness/manage-personal-training']" [routerLinkActive]="['active']">
+                        <a href="javascript:void(0);">
+                            <span>Manage Personal Training</span>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-package"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                    <span>Event</span>
+                </a>
+                <ul class="ml-menu">
+                    <li [routerLink]="['/admin/event/manage-admission']" [routerLinkActive]="['active']">
+                        <a href="javascript:void(0);">
+                            <span>Manage Admission</span>
+                        </a>
+                    </li>
+                    <li [routerLink]="['/admin/event/manage-enquery']" [routerLinkActive]="['active']">
+                        <a href="javascript:void(0);">
+                            <span>Manage Enquery</span>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-package"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                    <span>Account</span>
+                </a>
+                <ul class="ml-menu">
+                    <li [routerLink]="['/admin/account/manage-income']" [routerLinkActive]="['active']">
+                        <a href="javascript:void(0);">
+                            <span>Manage Income</span>
+                        </a>
+                    </li>
+                    <li [routerLink]="['/admin/account/manage-expenditure']" [routerLinkActive]="['active']">
+                        <a href="javascript:void(0);">
+                            <span>Manage Expenditure</span>
+                        </a>
+                    </li>
+                    <li [routerLink]="['/admin/account/manage-salary']" [routerLinkActive]="['active']">
+                        <a href="javascript:void(0);">
+                            <span>Manage Salary</span>
                         </a>
                     </li>
                    

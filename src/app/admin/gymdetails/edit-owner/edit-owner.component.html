@@ -1,0 +1,116 @@
+<app-header></app-header>
+<app-left-nav></app-left-nav>
+<section class="content">
+    <div class="container-fluid">
+        <div class="block-header">
+            <h2>
+                <button [routerLink]="['/admin/products']" type="button"
+                    class="btn btn-default btn-circle waves-effect waves-circle waves-float">
+                    <i class="material-icons">keyboard_arrow_left</i>
+                </button> &nbsp;&nbsp;&nbsp;Edit Owner</h2>
+        </div>
+
+        <!-- Horizontal Layout -->
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>
+                            Update Owner Details
+                        </h2>
+                        
+                    </div>
+
+                    <div class="body">
+                        <div id="wizard_horizontal">
+                        
+                            <section>
+                                <fieldset>
+                                    
+                                    <form action="#">
+                                    <div class="form-group ">
+                                        <div class="rows"><br>
+                                        <div class="col-md-6">
+                                            <label  for="name">Gym Id</label>
+                                            <input type="text" class="form-control" id="gymid" placeholder="Enter Gym Id" name="gymid">
+                                        </div>
+                                         <div class="col-md-6">
+                                            <label  for="name">Owner Id</label>
+                                            <input type="text" class="form-control" id="ownerid" placeholder="Enter Owner Id" name="ownerid">
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <div class="rows">
+                                        <div class="col-md-6">
+                                            <label  for="name">Owner Name</label>
+                                            <input type="text" class="form-control" id="ownername" placeholder="Enter Owner Name" name="ownername">
+                                        </div>
+                                         <div class="col-md-6">
+                                            <label  for="name">Date of Birth</label>
+                                            <input type="date" class="form-control" id="odob" placeholder="Enter Owner's DOB" name="odob">
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <div class="rows"><br>
+                                            <div class="col-md-12">
+                                                <label class="form-label">Details</label>
+                                                <textarea name="details" id="ckeditor" placeholder="Enter details here.... " class="form-control" cols="30" rows="5"
+                                                    class="form-control no-resize" required></textarea>    
+                                                   
+                                                    </div> 
+                                         <div class="col-md-6">
+                                            <label  for="name">Email</label>
+                                            <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+                                         </div>
+                                         <div class="col-md-6">
+                                            <label  for="name">Phone</label>
+                                            <input type="text" class="form-control" id="phone" placeholder="Enter Phone No" name="phone">
+                                         </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group ">
+                                        <div class="rows"><br>
+                                        <div class="col-md-6">
+                                            <label  for="name"> Contacted Date </label>
+                                            <input type="date" class="form-control" id="cdate" placeholder="Enter Contacted Date" name="cdate">
+                                        </div>
+                                         <div class="col-md-6">
+                                            <label  for="name">Status</label>
+                                            <select id="astatus" class="form-control" name="astatus" required>
+                                                <option selected disabled> Active Status </option>
+                                                <option value="10">10</option>
+                                                <option value="20">20</option>
+                                                <option value="30">30</option>
+                                                <option value="40">40</option>
+                                                <option value="50">50</option>
+                                            </select>
+                                         </div>
+                                         <div class="col-md-12">
+                                            <input type="submit" class="btn btn-primary btn-lg" id="" name="submit" value="submit">
+                                           
+                                            <input type="reset" class="btn btn-secondary btn-lg" id="" name="reset" value="Reset">
+                                           </div>
+                                        </div>
+                                    </div>
+                                    
+                                   </form>
+                                </fieldset>
+                            </section>
+
+                            
+
+                            
+
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- #END# Horizontal Layout -->
+    </div>
+</section>

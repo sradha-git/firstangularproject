@@ -1,0 +1,174 @@
+<app-header></app-header>
+<app-left-nav></app-left-nav>
+<section class="content">
+    <div class="container-fluid">
+        <div class="block-header">
+            <h2>
+                <button [routerLink]="['/admin/products']" type="button"
+                    class="btn btn-default btn-circle waves-effect waves-circle waves-float">
+                    <i class="material-icons">keyboard_arrow_left</i>
+                </button> &nbsp;&nbsp;&nbsp;Admission Details.</h2>
+        </div>
+
+        <!-- Horizontal Layout -->
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>
+                             UPDATE ADMISSION FORM
+                        </h2>
+                        
+                    </div>
+
+                    <div class="body">
+                        <div id="wizard_horizontal">
+                        
+                            <section>
+                                <fieldset>
+                                    
+                                    <form action="#">
+                                    <div class="form-group ">
+                                        <div class="rows"><br>
+                                        <div class="col-md-4">
+                                            <label  for="name">Gym Id</label>
+                                            <input type="text" class="form-control" id="gymid" placeholder="Enter Gym Id" name="gymid">
+                                        </div>
+                                         <div class="col-md-4">
+                                            <label  for="name">     Full Name</label>
+                                            <input type="text" class="form-control" id="fname" placeholder="Enter Full Name" name="fname">
+                                         </div>
+                                         <div class="col-md-4">
+                                            <label  for="name">Gender </label>
+                                            <select id="astatus" class="form-control" name="gender" required>
+                                                <option selected disabled> Active Status </option>
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                               
+                                            </select>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <div class="rows">
+                                        <div class="col-md-3">
+                                            <label  for="name">Current Weight</label>
+                                            <input type="text" class="form-control" id="cweight" placeholder="Enter Current Weight" name="cweight">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label  for="name">Goal Weight</label>
+                                            <input type="text" class="form-control" id="cweight" placeholder="Enter Current Weight" name="cweight">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label  for="name">Height</label>
+                                            <input type="text" class="form-control" id="height" placeholder="Enter Height" name="height">
+                                         </div>
+                                         <div class="col-md-3">
+                                            <label  for="name">Date of Birth</label>
+                                        <input type="date" class="form-control" id="dob" placeholder="Enter Date of Birth" name="dob">
+                                         </div>
+                                          
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <div class="rows">
+                                           
+                                             <div class="col-md-3">
+                                                <label  for="name">Age</label>
+                                            <input type="number" class="form-control" id="age" placeholder="Enter Age" name="age">
+                                             </div>
+                                        
+                                         
+                                            <div class="col-md-3">
+                                                <label  for="name">Blood Group</label>
+                                            <input type="text" class="form-control" id="dob" placeholder="Enter Date of Birth" name="dob">
+                                             </div>
+                                             
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <div class="rows">
+                                            <div class="col-md-3">
+                                                <label  for="name">Phone Number</label>
+                                            <input type="tel" class="form-control" id="phone" placeholder="Enter Phone No" name="phone">
+                                             </div>
+                                             <div class="col-md-3">
+                                                <label  for="name"> Mobile</label>
+                                            <input type="tel" class="form-control" id="mobile" placeholder="Enter Mobile No" name="mobile">
+                                             </div>
+                                        
+                                         
+                                            <div class="col-md-3">
+                                                <label  for="name">Email</label>
+                                            <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+                                             </div>
+                                         
+                                         <div class="col-md-3">
+                                            <label  for="name">Emergency Contact Persion</label>
+                                            <input type="text" class="form-control" id="ecperson" placeholder="Enter Emergency Contact Person" name="ecperson">
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <div class="rows"><br>
+                                            <div class="col-md-4">
+                                                <label  for="name"> Mobile</label>
+                                            <input type="tel" class="form-control" id="cmobile" placeholder="Enter Mobile No" name="cmobile">
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label  for="name"> Membership</label>
+                                                <select id="astatus" class="form-control" name="membership" required>
+                                                    <option selected disabled> Choose Membership </option>
+                                                    <option value="monthly">Monthly</option>
+                                                    <option value="quarterly">Quarterly</option>
+                                                    <option value="half yearly">Half Yearly</option>
+                                                    <option value="annually">Annually</option>
+                                                   
+                                                </select>
+                                             </div>
+                                             <div class="col-md-4">
+                                                <label  for="name">Time Slots</label>
+                                            <input type="text" class="form-control" id="timeslots" placeholder="6.00 AM TO 9.00 AM " name="timeslots">
+                                             </div></div></div>
+                                             <div class="form-group ">
+                                                <div class="rows"><br>
+                                            
+                                             <div class="col-md-4">
+                                                <label  for="name">Date Of Joining</label>
+                                            <input type="date" class="form-control" id="doj" placeholder="Date of Joining" name="doj">
+                                             </div>
+                                    <div class="col-md-4"> 
+                                                <label  for="name">Image</label>
+                                                    <input type="file"  id="image"  name="image">
+                                            </div> 
+                                             <div class="col-md-4"> 
+                                                <label  for="name">Address</label>
+                                                <textarea name="address" id="address" placeholder="address" class="form-control" cols="30" rows="5"
+                                                class="form-control no-resize" required></textarea>
+                                             </div>
+                                         <div class="col-md-12">
+                                            <input type="submit" class="btn btn-primary btn-lg" id="" name="submit" value="submit">
+                                           
+                                            <input type="reset" class="btn btn-secondary btn-lg" id="" name="reset" value="Reset">
+                                           </div>
+                                        </div>
+                                    </div>
+                                    
+                                   </form>
+                                </fieldset>
+                            </section>
+
+                            
+
+                            
+
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- #END# Horizontal Layout -->
+    </div>
+</section>
